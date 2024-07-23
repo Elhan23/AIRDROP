@@ -28,6 +28,7 @@ body{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .card_flex{
@@ -40,4 +41,11 @@ body{
 .dogs_flex{
    display: flex;
    flex-wrap: wrap;
+}
+
+
+@media (max-width: 768px) {
+   .dogs{
+     display: none;
+   }
 }

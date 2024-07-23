@@ -13,8 +13,8 @@ import Footer from "./layout/Footer/Footer";
 function App() {
   return (
     <div>
-         <NavBar />
-      <Dogs/>
+      <NavBar />
+      <Dogs />
       <div className="community_flex">
         <Community
           title="DOGS Community"
@@ -36,8 +36,7 @@ function App() {
         <CardCommunity />
         <CardCommunity />
       </div>
-      <GetDogs/>
-
+      <GetDogs />
 
       <div className="community_flex">
         <Community
@@ -54,22 +53,27 @@ function App() {
           text="1,5М"
           eye={eye}
         />
-        <Community
-          title="CATS Community"
-          description="4,123,456 Subscribers"
-          img={phonedog2}
-          text="2,1М"
-          eyedog={eyedog}
-        />
-        <Community
-          title="CATS Community"
-          description="4,123,456 Subscribers"
-          img={phonedog2}
-          text="2,1М"
-          eyedog={eyedog}
-        />
+
+        <div className="dogs">
+          <Community
+            className="cats"
+            title="CATS Community"
+            description="4,123,456 Subscribers"
+            img={phonedog2}
+            text="2,1М"
+            eyedog={eyedog}
+          />
+          <Community
+            className="cats"
+            title="CATS Community"
+            description="4,123,456 Subscribers"
+            img={phonedog2}
+            text="2,1М"
+            eyedog={eyedog}
+          />
+        </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

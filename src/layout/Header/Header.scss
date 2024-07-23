@@ -53,11 +53,11 @@
 @media (max-width: 768px) {
   .join_class {
     display: flex;
-    justify-content: center;
+   
 
     .btn_header{
        .community_class{
-         width: 150px;
+         width: 320px;
        }
 
        .connect_class{
@@ -65,11 +65,13 @@
        }
 
        .dogs_btn{
-         width: 300px;
+      
+         width: 350px;
        }
     }
 
     & h1 {
+
       font-size: 30px;
       line-height: 1.2;
     }
