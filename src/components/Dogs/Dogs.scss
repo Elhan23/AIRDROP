@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-.container1 {
-  max-width: 1440px;
-  display: none;
-  margin: 0 auto;
-  padding: 12px 120px;
-  background-color: #000;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-}
+
 
 .steps {
   display: flex;
@@ -31,6 +23,8 @@
 .card {
   background-color: #111;
   border: 1px solid grey;
+  color: white;
+  font-family: "Inter", sans-serif;
   padding: 20px;
   border-radius: 5px;
   width: 300px;

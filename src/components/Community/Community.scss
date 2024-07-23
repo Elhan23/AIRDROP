@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   margin-top: 100px;
-  
 
   .desription_dog {
     display: flex;
     align-items: center;
+    width: 500px;
 
     .subscribers {
       display: flex;
@@ -48,7 +48,43 @@
 }
 
 @media (max-width: 768px) {
-   .phonedog_class{
-     display: none;
-   }
+  .phonedog_class {
+    display: none;
+    margin-top: 50px;
+    padding: 20px;
+    
+    .desription_dog {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .subscribers {
+        & h2 {
+          font-size: 24px;
+        }
+
+        & p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .views_class {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+
+      .eye {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .phonedog1 {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  }
 }

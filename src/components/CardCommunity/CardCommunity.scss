@@ -5,7 +5,7 @@
   background-position: center;
   width: 500px;
   height: 600px;
-
+  
   & hr {
     margin-top: 20px;
     opacity: 20%;
@@ -83,10 +83,43 @@
 
 @media (max-width: 768px) {
   .bg_card {
+    width: 100%;
+    height: auto;
     display: none;
+    padding: 20px;
+    box-sizing: border-box;
+
+    .connect_wallet {
+      flex-direction: column;
+      align-items: center;
+
+      & button {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+
+    .biggest {
+      margin-top: 20px;
+
+      & h3 {
+        font-size: 30px;
+      }
+
+      .btn_wallet {
+        flex-direction: column;
+
+        .card_class1,
+        .card_btn2 {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
   }
 
   .global_style {
-    display: none;
+    display: block;
+    padding: 20px;
   }
 }

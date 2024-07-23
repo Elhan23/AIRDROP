@@ -13,8 +13,8 @@ import Footer from "./layout/Footer/Footer";
 function App() {
   return (
     <div>
-      <NavBar />
-      <Dogs />
+         <NavBar />
+      <Dogs/>
       <div className="community_flex">
         <Community
           title="DOGS Community"

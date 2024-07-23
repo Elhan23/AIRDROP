@@ -1,5 +1,4 @@
 .join_class {
-  width: 1000px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -57,21 +56,22 @@
     justify-content: center;
 
     .btn_header{
-       
-      .connect_class{
-         width: 200px;
-      }
+       .community_class{
+         width: 150px;
+       }
 
-      .dogs_btn{
+       .connect_class{
+         font-size: 17px;
+       }
+
+       .dogs_btn{
          width: 300px;
-      }
+       }
     }
 
-   
-
     & h1 {
-      font-size: 30px; 
-      line-height: 1.2; 
+      font-size: 30px;
+      line-height: 1.2;
     }
   }
 }

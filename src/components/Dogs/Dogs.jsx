@@ -33,7 +33,7 @@ function Dogs() {
   }, []);
 
   return (
-    <section className="container1" ref={dogSectionRef}>
+    <section className="container" ref={dogSectionRef}>
       <div>
         <h2>How to get your $DOGS?</h2>
 
