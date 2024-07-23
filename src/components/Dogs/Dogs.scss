@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.container1 {
+  max-width: 1440px;
+  display: none;
+  margin: 0 auto;
+  padding: 12px 120px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.number, .dog, .arrow {
+  margin-right: 20px;
+}
+
+.card {
+  background-color: #111;
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 16px;
+
+  span {
+     font-size: 24px;
+  }
+}
+
+.number {
+  width: 30px; 
+}
+
+.dog {
+  width: 400px;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 1s ease;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 300px - 70px);
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 1s ease;
+}
+
+.animate .dog {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate .arrow {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.step:nth-child(2) .dog, .step:nth-child(2) .arrow {
+  transition-delay: 0.2s;
+}
+
+.step:nth-child(3) .dog, .step:nth-child(3) .arrow {
+  transition-delay: 0.4s;
+}
+
+
+@media (max-width: 768px) {
+   .steps{
+     display: none;
+   }
+}

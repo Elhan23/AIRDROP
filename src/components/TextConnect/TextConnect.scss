@@ -1,0 +1,48 @@
+.terms_class {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  color: white;
+  justify-content: space-between;
+
+  .terms_text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    & span {
+      color: #ffffff;
+      opacity: 60%;
+      font-weight: 500;
+      font-size: 22px;
+    }
+
+    & p {
+      color: #ffffff;
+      opacity: 40%;
+      font-weight: 400;
+      font-size: 17px;
+    }
+  }
+
+  .documetations_class {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    .mini_text {
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      opacity: 40%;
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .terms_class {
+   
+      display: none;
+    
+  }
+}

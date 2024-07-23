@@ -1,0 +1,92 @@
+.bg_card {
+  background-image: url("../../assets/images/bgimg2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 500px;
+  height: 600px;
+
+  & hr {
+    margin-top: 20px;
+    opacity: 20%;
+  }
+
+  .connect_wallet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & button {
+      width: 170px;
+      padding: 10px;
+      border-radius: 14px;
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .biggest {
+    margin-top: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+
+    & h3 {
+      color: white;
+      font-weight: 400;
+      font-size: 50px;
+    }
+
+    .btn_wallet {
+      display: flex;
+      margin-top: 20px;
+      align-items: center;
+      gap: 10px;
+
+      .card_class1 {
+        width: 200px;
+        background-color: #007bfe;
+        color: white;
+        padding: 18px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .card_btn2 {
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        color: white;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: black;
+        border: 1px solid grey;
+        cursor: pointer;
+
+        & img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .bg_card {
+    display: none;
+  }
+
+  .global_style {
+    display: none;
+  }
+}

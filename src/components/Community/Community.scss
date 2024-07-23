@@ -1,0 +1,54 @@
+.phonedog_class {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  
+
+  .desription_dog {
+    display: flex;
+    align-items: center;
+
+    .subscribers {
+      display: flex;
+      flex-direction: column;
+      font-family: "Inter", sans-serif;
+      gap: 5px;
+
+      & h2 {
+        font-weight: 500;
+        font-size: 30px;
+        color: white;
+      }
+
+      & p {
+        font-weight: 400;
+        font-size: 17px;
+        color: white;
+      }
+    }
+  }
+
+  .views_class {
+    display: flex;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    gap: 5px;
+    color: grey;
+  }
+
+  .eye {
+    width: 30px;
+    height: 30px;
+    opacity: 30%;
+  }
+
+  .phonedog1 {
+    width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+   .phonedog_class{
+     display: none;
+   }
+}
